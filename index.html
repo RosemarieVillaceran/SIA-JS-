@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off" onsubmit ="return verifyPassword()">
+        <h2>Doctor Appointment Request Form</h2><br>
+         <div class="input-section">
+          <label>Last Name <span class="required-color">*</span></label>
+          <input type="text" placeholder="Enter Last Name" id="last-name-input">
+          <span id="last-name-error" class="hide required-color error-message">Invalid Input</span >
+          <span id="empty-last-name" class="hide required-color error-message">Last Name Cannot Be Empty</span>
+        </div>
+         <div class="input-section">
+          <label>First Name <span class="required-color">*</span></label>
+          <input type="text"placeholder="Enter First Name"id="first-name-input"/>
+          <span id="first-name-error" class="hide required-color error-message"
+            >Invalid Input</span>
+          <span id="empty-first-name" class="hide required-color error-message">First Name Cannot Be Empty</span>
+        </div>
+        <div class="input-section">
+          <label>Phone Number <span class="required-color">*</span></label>
+          <input type="text" placeholder="Enter Phone Number" id="phone">
+          <span id="phone-error" class="hide required-color error-message"
+            >Phone Number Should Have 10 Digits</span>
+          <span id="empty-phone" class="hide required-color error-message"> Phone cannot be empty</span>
+        <div class="input-section">
+          <label>Address <span class="required-color">*</span></label>
+          <input type="text"placeholder="Enter First Name"id="address-name-input"/>
+          <span id="address-name-error" class="hide required-color error-message"
+            >Invalid Input</span>
+          <span id="empty-address-name" class="hide required-color error-message">First Name Cannot Be Empty</span>
+        </div>
+      <div class="input-section">
+          <label>Email <span class="required-color">*</span></label>
+          <input type="email" placeholder="" id="email">
+          <span id="email-error" class="hide required-color error-message" >Invalid Email</span>
+          <span id="empty-email" class="hide required-color error-message">Email Cannot Be Empty</span>
+        </div>
+        <div class="input-section">
+       
+          <label>Male <span class="required-color">*</span></label>
+          <input type="radio" id="radio" value="HTML" class="radio">
+          <label>Female <span class="required-color">*</span></label>
+          <input type="radio" id="radio" value="HTML" class="radio">
+          <label>Other <span class="required-color">*</span></label>
+          <input type="radio" id="radio" value="HTML" class="radio">
+        </div>
+      
+        
+          <span id="address-name-error" class="hide required-color error-message"
+            >Invalid Input</span>
+          <span id="empty-address-name" class="hide required-color error-message">First Name Cannot Be Empty</span>
+        
+       
+      </div>
+              <div class="input-section">
+      <label>Passowrd<span class="required-color">*</span></label> 
+     <input type = "password" id = "pswd" value = "">   
+     <span id = "message" style="color:red"> </span> <br><br>  
+  
+<!-- Click to verify valid password -->  
+<input type = "submit" value = "Submit">  
+  
+<!-- Click to reset fields -->  
+<button type = "reset" value = "Reset" >Reset</button> 
+</div> 
+      
+       
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
